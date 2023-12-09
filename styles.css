@@ -2,6 +2,17 @@
     padding: 0;
     margin: 0;
 }
+#topText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: black;
+    cursor: pointer;
+    background-color: rgb(30, 138, 30);
+}
 #time{
     display: block;
     font-size: 3.5em;
@@ -12,6 +23,7 @@
     font-weight: 100;
 }
 .container{
+    user-select: none;
     background-color: gray;
     text-align: center;
     max-width: 400px;
