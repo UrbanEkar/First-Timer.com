@@ -84,9 +84,10 @@
 .buttons:active{
     opacity: 0.8;
 }
-@media (max-width: 1500px) {
+
+@media (max-width: 1000px) {
     #scoreboard {
-        width: 300px;
+        width: 150px;
         margin: 30px auto 0;
         background: #cbcbcb;
         border-radius: 8px;
@@ -102,15 +103,15 @@
     #scoreboard #title {
         font-family: monospace;
         text-align: center;
-        font-size: 40px;
-        margin-bottom: 15px;
+        font-size: 27px;
+        margin-bottom: 5px;
     }
     
     #scoreboard .element {
         display: flex;
         justify-content: space-between;
-        padding: 0 5px;
-        font-size: 24px;
+        padding: 0px 5px;
+        font-size: 13px;
     }
     
     #scoreboard .element .unit {
@@ -118,6 +119,37 @@
     }
 }
 @media (min-width: 1000px) {
+    #scoreboard {
+        width: 150px;
+        margin: 30px auto 0;
+        background: #cbcbcb;
+        border-radius: 8px;
+        box-shadow: 0 0 0 0 black;
+        position: relative;
+        top: 25px;
+        right: auto;
+        left: auto;
+        padding: 20px 40px;
+        font-family: monospace;
+    }
+    
+    #scoreboard #title {
+        font-family: monospace;
+        text-align: center;
+        font-size: 27px;
+        margin-bottom: 5px;
+    }
+    
+    #scoreboard .element {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 5px;
+        font-size: 13px;
+    }
+    
+    #scoreboard .element .unit {
+        margin-left: 4px;
+    }
     #time{
         display: block;
         font-size: 3.5em;
@@ -154,7 +186,7 @@
     }
 }
 
-@media (min-width: 1501px) {
+@media (min-width: 1700px) {
     #scoreboard {
         width: 300px;
         margin: 30px auto 0;
@@ -173,22 +205,19 @@
         font-family: monospace;
         text-align: center;
         font-size: 40px;
-        margin-bottom: 15px;
+        margin-bottom: 2px;
     }
     
     #scoreboard .element {
         display: flex;
         justify-content: space-between;
         padding: 0 5px;
-        font-size: 24px;
+        font-size: 18px;
     }
     
     #scoreboard .element .unit {
-        margin-left: 4px;
+        margin-left: 2px;
     }
-}
-
-@media (min-width: 1700px) {
     #time{
         display: block;
         font-size: 5.5em;
@@ -227,6 +256,37 @@
 
 
 @media (min-width: 2200px) {
+    #scoreboard {
+        min-width: 500px;
+        margin: 30px auto 0;
+        background: #cbcbcb;
+        border-radius: 8px;
+        box-shadow: 0 0 0 0 black;
+        position: relative;
+        top: 25px;
+        right: auto;
+        left: auto;
+        padding: 20px 40px;
+        font-family: monospace;
+    }
+    
+    #scoreboard #title {
+        font-family: monospace;
+        text-align: center;
+        font-size: 70px;
+        margin-bottom: 15px;
+    }
+    
+    #scoreboard .element {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+        font-size: 23px;
+    }
+    
+    #scoreboard .element .unit {
+        margin-left: 4px;
+    }
     #time{
         display: block;
         font-size: 8em;
