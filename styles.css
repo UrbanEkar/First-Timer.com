@@ -2,6 +2,37 @@
     padding: 0;
     margin: 0;
 }
+
+#scoreboard {
+    width: 300px;
+    margin: 30px auto 0;
+    background: #cbcbcb;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 black;
+    position: absolute;
+    top: 85px;right: 20px;
+    padding: 20px 40px;
+    font-family: monospace;
+}
+
+#scoreboard #title {
+    font-family: monospace;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#scoreboard .element {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    font-size: 24px;
+}
+
+#scoreboard .element .unit {
+    margin-left: 4px;
+}
+
 #topText{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;

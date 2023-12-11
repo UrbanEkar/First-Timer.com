@@ -11,34 +11,28 @@ window.onload = function() {
     let appendMinutes = document.querySelector('#minutes');
     let appendSeconds = document.querySelector('#seconds');
     let appendTens = document.querySelector('#tens');
-
-    let lastUpdateTime = 0;
-    let isRunning = false;
-
+    let Interval;
     startBtn.onclick = () => {
-        elapsedTime = performance.now();
-        isRunning = true;
-        window.requestAnimationFrame(updateTimer);
+        clearInterval(Interval)
+        Interval = setInterval(startTimer,10)
     }
 
     stopBtn.onclick = () => {
-        isRunning = false;
+        clearInterval(Interval)
     }
-
-
     resetBtn.onclick = () => {
-        isRunning = false;
+        clearInterval(Interval)
+        tens = 0;
+        seconds = 0;
+        minutes = 0;
         hours = 0;
-        
+       
+        displayTimer();
+
     }
 
 
-    function updateTimer() {
-        console.log(performance.now() - lastUpdateTime);
-        let deltaTime = Math.round((performance.now() - lastUpdateTime) / 10);
-        tens += deltaTime;
-        lastUpdateTime = performance.now();
-
+    function displayTimer() {
         if(tens > 99) {
             seconds++;
             tens = 0
@@ -53,18 +47,15 @@ window.onload = function() {
             minutes = 0
         }
 
-        //if(hours > 23) {
-        //}
+        if(hours > 23) {
+        }
         appendTens.innerText = (tens <= 9 ? "0": "") + tens;
         appendSeconds.innerText = (seconds <= 9 ? "0": "") + seconds;
         appendMinutes.innerText = (minutes <= 9 ? "0": "") + minutes;
         appendHours.innerText = (hours <= 9 ? "0": "") + hours;
-
-        if(isRunning) {
-            while(performance.now() - lastUpdateTime < 10);
-            requestAnimationFrame(updateTimer);
-        }
     }
-
-
+    function startTimer() {
+        tens++;
+        displayTimer();
+    }
 }
