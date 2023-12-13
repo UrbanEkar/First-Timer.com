@@ -18,7 +18,8 @@ window.onload = function() {
 
     startBtn.onclick = () => {
         startTime = performance.now() - elapsedTime;
-        timerInterval = setInterval(updateTimer, 10);
+        if(!timerInterval)
+            timerInterval = setInterval(updateTimer, 10);
     }
 
     stopBtn.onclick = () => {
@@ -44,7 +45,7 @@ window.onload = function() {
     }
 
     function displayTime(elapsedTime) {
-
+        
         tens = Math.floor(elapsedTime / 10 % 100);
         seconds = Math.floor(elapsedTime / 10 / 100 % 60);
         minutes = Math.floor((elapsedTime / 10 / 100 / 60) % 60);
