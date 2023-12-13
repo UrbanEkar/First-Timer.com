@@ -23,11 +23,13 @@ window.onload = function() {
 
     stopBtn.onclick = () => {
         clearInterval(timerInterval);
+        timerInterval = null;
     }
 
 
     resetBtn.onclick = () => {
         clearInterval(timerInterval);
+        timerInterval = null;
         elapsedTime = 0;
         startTime = performance.now();
         hours = 0;
