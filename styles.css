@@ -35,7 +35,7 @@
 
 #topText{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 400px;
     font-size: 40px;
     text-align: center;
     text-decoration: underline;
@@ -43,6 +43,11 @@
     color: black;
     cursor: pointer;
     background-color: rgb(30, 138, 30);
+}
+#stevilka{
+    height: 5px;
+    width: auto;
+    border: 3px red solid;
 }
 #time{
     display: block;
