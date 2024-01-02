@@ -109,7 +109,7 @@
     margin-bottom: 20px;
     user-select: none;
     color: black;
-    cursor: no-drop;
+    cursor: e-resize;
     background-color: rgb(30, 138, 30);
 }
 #stevilka{
@@ -345,6 +345,18 @@
         top: 10px;
     }
 }
+@media(min-width: 1200px) {
+    .start-stop-reset-text-start{
+        background-color: red;
+    }
+    .start-stop-reset-text-stop{
+        background-color: green;
+    }
+    .start-stop-reset-text-reset{
+        opacity: 0.7;
+        background-color: yellow;
+    }
+}
 @media (min-width: 1700px) {
     #topText{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -355,7 +367,8 @@
         margin-bottom: 20px;
         user-select: none;
         color: black;
-        cursor: no-drop;
+        cursor:zoom-in;
+        cursor: 100px;
         background-color: rgb(30, 138, 30);
     }
     .start-stop-reset-text{
