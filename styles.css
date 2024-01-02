@@ -79,6 +79,7 @@
     top: 85px;right: 20px;
     padding: 20px 40px;
     font-family: monospace;
+    user-select: none;
 }
 
 #scoreboard #title {
@@ -101,7 +102,7 @@
 
 #topText{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400px;
+    font-weight: 100px;
     font-size: 40px;
     text-align: center;
     text-decoration: underline;
@@ -112,9 +113,8 @@
     background-color: rgb(30, 138, 30);
 }
 #stevilka{
-    height: 5px;
-    width: auto;
     border: 3px red solid;
+    background-color: rgb(45, 209, 45);
 }
 #time{
     display: block;
@@ -157,7 +157,34 @@
     opacity: 0.8;
 }
 
+@media(max-width: 600px) {
+    #topText{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 10px;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 20px;
+        user-select: none;
+        color: black;
+        cursor: no-drop;
+        background-color: rgb(30, 138, 30);
+    }
+}
+
+
 @media (max-width: 1000px) {
+    #topText{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 20px;
+        user-select: none;
+        color: black;
+        cursor: no-drop;
+        background-color: rgb(30, 138, 30);
+    }
     .start-stop-reset-text{
         border-radius: 10px;
         font-family: Arial, Helvetica, sans-serif;
@@ -215,6 +242,18 @@
     }
 }
 @media (min-width: 1000px) {
+    #topText{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 20px;
+        user-select: none;
+        color: black;
+        cursor: no-drop;
+        background-color: rgb(30, 138, 30);
+    }
     .start-stop-reset-text{
         border-radius: 10px;
         font-family: Arial, Helvetica, sans-serif;
@@ -307,6 +346,18 @@
     }
 }
 @media (min-width: 1700px) {
+    #topText{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 20px;
+        user-select: none;
+        color: black;
+        cursor: no-drop;
+        background-color: rgb(30, 138, 30);
+    }
     .start-stop-reset-text{
         border-radius: 10px;
         font-family: Arial, Helvetica, sans-serif;
