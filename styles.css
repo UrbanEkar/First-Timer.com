@@ -2,6 +2,72 @@
     padding: 0;
     margin: 0;
 }
+.register--login{
+    min-height: 125px;
+    max-height: 500px;
+    min-width: 100px;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.anchor{
+    all: unset;
+    position: relative;
+    cursor: pointer;
+}
+.start-stop-reset-text{
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    height: 150px;
+    text-align: center;
+    background-color: blue;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.start-stop-reset-text-start{
+    background-color: red;
+}
+.start-stop-reset-text-stop{
+    background-color: green;
+}
+.start-stop-reset-text-reset{
+    opacity: 0.7;
+    background-color: yellow;
+}
+#login{
+    all: unset;
+    background-color: darkcyan;
+    padding: 10px 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#register{
+    all: unset;
+    background-color: red;
+    padding: 10px 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#change-password{
+    all: unset;
+    background-color: green;
+    padding: 10px 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #scoreboard {
     width: 300px;
@@ -40,8 +106,9 @@
     text-align: center;
     text-decoration: underline;
     margin-bottom: 20px;
+    user-select: none;
     color: black;
-    cursor: pointer;
+    cursor: no-drop;
     background-color: rgb(30, 138, 30);
 }
 #stevilka{
@@ -91,6 +158,30 @@
 }
 
 @media (max-width: 1000px) {
+    .start-stop-reset-text{
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        height: 80px;
+        text-align: center;
+        background-color: blue;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .start-stop-reset-text-start{
+        display: none;
+    }
+    .start-stop-reset-text-stop{
+        display: none;
+    }
+    .start-stop-reset-text-reset{
+        display: none;
+    }
     #scoreboard {
         width: 150px;
         margin: 30px auto 0;
@@ -124,6 +215,31 @@
     }
 }
 @media (min-width: 1000px) {
+    .start-stop-reset-text{
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        height: 65px;
+        text-align: center;
+        background-color: blue;
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .start-stop-reset-text-start{
+        background-color: red;
+    }
+    .start-stop-reset-text-stop{
+        background-color: green;
+    }
+    .start-stop-reset-text-reset{
+        opacity: 0.7;
+        background-color: yellow;
+    }
     #scoreboard {
         width: 150px;
         margin: 30px auto 0;
@@ -190,8 +306,32 @@
         top: 10px;
     }
 }
-
 @media (min-width: 1700px) {
+    .start-stop-reset-text{
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        height: 100px;
+        text-align: center;
+        background-color: blue;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .start-stop-reset-text-start{
+        background-color: red;
+    }
+    .start-stop-reset-text-stop{
+        background-color: green;
+    }
+    .start-stop-reset-text-reset{
+        opacity: 0.7;
+        background-color: yellow;
+    }
     #scoreboard {
         width: 300px;
         margin: 30px auto 0;
@@ -261,6 +401,31 @@
 
 
 @media (min-width: 2200px) {
+    .start-stop-reset-text{
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        height: 140px;
+        text-align: center;
+        background-color: blue;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .start-stop-reset-text-start{
+        background-color: red;
+    }
+    .start-stop-reset-text-stop{
+        background-color: green;
+    }
+    .start-stop-reset-text-reset{
+        opacity: 0.7;
+        background-color: yellow;
+    }
     #scoreboard {
         min-width: 500px;
         margin: 30px auto 0;

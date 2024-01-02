@@ -15,6 +15,30 @@ let timerInterval;
 let startTime, elapsedTime = 0;
 
 window.onload = function() {
+    //this prevents the site scrolling when pressing space button
+    window.onkeydown = function(e) { 
+        return !(e.keyCode == 32);
+    };
+
+    //checking what key you pressed and starting,stopping,reseting
+    
+    document.body.addEventListener('keydown', (ev) => {
+        if(ev.key == " ") {
+            startTime = performance.now() - elapsedTime;
+            if(!timerInterval)
+                timerInterval = setInterval(updateTimer, 10);
+        }else if(ev.key == "Shift") {
+            clearInterval(timerInterval);
+            timerInterval = null;
+        }else if(ev.key == "Control") {
+            clearInterval(timerInterval);
+            timerInterval = null;
+            elapsedTime = 0;
+            startTime = performance.now();
+            hours = 0;
+            updateTimer();
+        }return
+    })
 
     startBtn.onclick = () => {
         startTime = performance.now() - elapsedTime;
@@ -26,7 +50,7 @@ window.onload = function() {
         clearInterval(timerInterval);
         timerInterval = null;
     }
-
+    //when shift is pressed down, the reset button starts working
 
     resetBtn.onclick = () => {
         clearInterval(timerInterval);
@@ -56,6 +80,5 @@ window.onload = function() {
         appendMinutes.innerText = (minutes <= 9 ? "0": "") + minutes;
         appendHours.innerText = (hours <= 9 ? "0": "") + hours;
     }
-
 
 }
