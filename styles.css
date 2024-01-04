@@ -109,7 +109,7 @@
     margin-bottom: 20px;
     user-select: none;
     color: black;
-    cursor: e-resize;
+    cursor:zoom-in;
     background-color: rgb(30, 138, 30);
 }
 #stevilka{
@@ -182,7 +182,7 @@
         margin-bottom: 20px;
         user-select: none;
         color: black;
-        cursor: no-drop;
+        cursor:zoom-in;
         background-color: rgb(30, 138, 30);
     }
     .start-stop-reset-text{
@@ -251,7 +251,7 @@
         margin-bottom: 20px;
         user-select: none;
         color: black;
-        cursor: no-drop;
+        cursor:zoom-in;
         background-color: rgb(30, 138, 30);
     }
     .start-stop-reset-text{
