@@ -2,22 +2,66 @@
     padding: 0;
     margin: 0;
 }
-.register--login{
-    min-height: 125px;
-    max-height: 500px;
-    min-width: 100px;
-    max-width: 380px;
+
+
+.anchor{
+    display: none;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    animation: fadeEffect 3s;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+
+ .login--register--change-password{
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    gap: 2px;
     flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
 }
-.anchor{
+
+
+
+#login{
     all: unset;
-    position: relative;
-    cursor: pointer;
+    background-color: darkcyan;
+    padding: 10px 40px;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 5px;
+    animation: fadeEffect 3s;
 }
+#register{
+    all: unset;
+    background-color: red;
+    padding: 10px 40px;
+    gap: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    animation: fadeEffect 3s;
+}
+#change-password{
+    all: unset;
+    background-color: green;
+    padding: 10px 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
 .start-stop-reset-text{
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -42,30 +86,6 @@
 .start-stop-reset-text-reset{
     opacity: 0.7;
     background-color: yellow;
-}
-#login{
-    all: unset;
-    background-color: darkcyan;
-    padding: 10px 40px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-#register{
-    all: unset;
-    background-color: red;
-    padding: 10px 40px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-#change-password{
-    all: unset;
-    background-color: green;
-    padding: 10px 40px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -356,8 +376,9 @@
         opacity: 0.7;
         background-color: yellow;
     }
+    
 }
-@media (min-width: 1700px) {
+@media (min-width: 1500px) {
     #topText{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: 100px;
@@ -462,7 +483,11 @@
         top: 30px;
     }
 }
-
+@media (min-width: 1550px) {
+    .anchor{
+        display: block;
+    }
+}
 
 @media (min-width: 2200px) {
     .start-stop-reset-text{
@@ -556,5 +581,3 @@
         top: 20px;
     }
 }
-
-
