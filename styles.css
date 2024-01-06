@@ -5,7 +5,6 @@
 
 
 .anchor{
-    display: none;
     color: black;
     text-decoration: none;
     position: relative;
@@ -190,7 +189,6 @@
         background-color: rgb(30, 138, 30);
     }
 }
-
 
 @media (max-width: 1000px) {
     #topText{
@@ -483,12 +481,6 @@
         top: 30px;
     }
 }
-@media (min-width: 1550px) {
-    .anchor{
-        display: block;
-    }
-}
-
 @media (min-width: 2200px) {
     .start-stop-reset-text{
         border-radius: 10px;
@@ -514,6 +506,17 @@
     .start-stop-reset-text-reset{
         opacity: 0.7;
         background-color: yellow;
+    }
+    .login--register--change-password{
+        font-size: 25px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 100px;
     }
     #scoreboard {
         min-width: 500px;

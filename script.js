@@ -8,49 +8,6 @@ let appendSeconds = document.querySelector('#seconds');
 let appendTens = document.querySelector('#tens');
 
 
-window.addEventListener("scroll", function() {scrolling()})
-
-let anchor = document.querySelectorAll(".anchor")
-
-function scrolling() {
-	if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
-		whenScrolled()
-	} else {
-		anchor.forEach((element) => element.style.display = "none");
-	}
-}
-
-function whenScrolled() {
-	anchor.forEach((element) => element.style.display = "block");
-	console.log("You scrolled")
-}
-
-
-
-
-/*
-function scrolling() {
-	if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-		whenScrolling()
-	} else {
-		whenNotScrolling()
-	}
-}
-
-function whenScrolling() {
-	document.querySelector(".anchor").style.display = "block";
-	document.querySelector(".anchor2").style.display = "block"
-	document.querySelector(".anchor3").style.display = "block"
-	console.log("You scrolled")
-}
-function whenNotScrolling() {
-	document.querySelector(".anchor").style.display = "none";
-		document.querySelector(".anchor2").style.display = "none";
-		document.querySelector(".anchor3").style.display = "none";
-		//ne vem zakva to noce delat: document.querySelector(".scoreboard").style.margin-bottom = "2000px"
-}*/
-
-
 class Timer {
 	constructor(hoursElement, minutesElement, secondsElement, tensElement) {
 		this.hoursElement = hoursElement;
