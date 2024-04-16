@@ -16,7 +16,7 @@ class Timer {
 		this.tensElement = tensElement;
 
 		this.timerInterval;
-		this.startTime
+		this.startTime;
 		this.elapsedTime = 0;
 
 		this.updateTimer = this.updateTimer.bind(this);
